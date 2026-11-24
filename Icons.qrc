@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="Previous">
+    <file>Previous.png</file>
+  </qresource>
+  <qresource prefix="Icon">
+    <file>Icon.jpg</file>
+  </qresource>
+  <qresource prefix="RepeatOff">
+    <file>RepeatOff.png</file>
+  </qresource>
+  <qresource prefix="RepeatDouble">
+    <file>RepeatDouble.png</file>
+  </qresource>
+  <qresource prefix="Repeat">
+    <file>Repeat.png</file>
+  </qresource>
+  <qresource prefix="Mixing">
+    <file>Mixing.png</file>
+  </qresource>
+  <qresource prefix="Next">
+    <file>Next.png</file>
+  </qresource>
+  <qresource prefix="Continue">
+    <file>Continue.png</file>
+  </qresource>
+  <qresource prefix="Pause">
+    <file>Pause.png</file>
+  </qresource>
+</RCC>

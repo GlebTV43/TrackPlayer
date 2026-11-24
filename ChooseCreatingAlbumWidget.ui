@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_CCAW</class>
+ <widget class="QDialog" name="Dialog_CCAW">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>479</width>
+    <height>100</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Creating Menu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #9AD2CB;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_InfoOfWidget">
+     <property name="styleSheet">
+      <string notr="true">background-color: #0E1116;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Please, choose how to create an album&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_CreateYourSelf">
+       <property name="styleSheet">
+        <string notr="true">background-color: #0E1116;
+color: white</string>
+       </property>
+       <property name="text">
+        <string>Create yourself</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_GenerateAlbum">
+       <property name="styleSheet">
+        <string notr="true">background-color: #0E1116;
+color: white</string>
+       </property>
+       <property name="text">
+        <string>Generate album</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Cancel">
+       <property name="styleSheet">
+        <string notr="true">background-color: #0E1116;
+color: white</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_ADF</class>
+ <widget class="QDialog" name="Dialog_ADF">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>478</width>
+    <height>107</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Adding</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #9AD2CB;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButton_Continue">
+     <property name="styleSheet">
+      <string notr="true">background-color: #0E1116;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>Continue</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="pushButton_PlayThis">
+     <property name="styleSheet">
+      <string notr="true">background-color: #0E1116;
+color: white</string>
+     </property>
+     <property name="text">
+      <string>Play this</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: #121212;
+color: white</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>6</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>6</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_Title_Composition">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #121212;
+color: white</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Composition&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_CompositionName">
+             <property name="styleSheet">
+              <string notr="true">background-color: #121212;
+color: white</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;NONE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_Title_Duration">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #121212;
+color: white</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Duration&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_CompositionDuration">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #121212;
+color: white</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;NONE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_Title_Genre">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #121212;
+color: white</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Genre&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_Genre">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #8b94a3;
+color: white</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Rap</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Hip-hop</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Reggae</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Funk</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>New wave</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Soul</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Disco</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Chanson</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Romance</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bard songs</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Electronic music</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Techno</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Trance</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Hardcore</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>House</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Minimalism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Neoclassicism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>March</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Symphonic music</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Early baroque</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Operetta</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Mass</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Folk music</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Country music</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Latin American music</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Blues</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Rhythm and blues</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Late baroque</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Early classicism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Late classicism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Motet</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Early romanticism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Late romanticism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Impressionism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Expressionism</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Jazz</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Pop</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Rock</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Opera</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Classical</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Heavy metal</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
