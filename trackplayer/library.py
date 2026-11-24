@@ -15,8 +15,8 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QTableWidgetItem, QCheckBox, QPushButton, QTableWidget, QLineEdit, QLabel, QDialog, \
     QHeaderView
 
-from AlbumInformationWidget import Ui_Dialog_AIW
-from ChangeCompositionWidget import Ui_Dialog_CCW
+from .ui.album_information import Ui_Dialog_AIW
+from .ui.change_composition import Ui_Dialog_CCW
 
 
 # Функция получения длины

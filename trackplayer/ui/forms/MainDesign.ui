@@ -568,7 +568,7 @@ color: white
   </widget>
  </widget>
  <resources>
-  <include location="Icons.qrc"/>
+  <include location="../resources/Icons.qrc"/>
  </resources>
  <connections/>
 </ui>

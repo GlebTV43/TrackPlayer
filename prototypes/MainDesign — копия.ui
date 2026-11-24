@@ -460,7 +460,7 @@ color: white</string>
   </widget>
  </widget>
  <resources>
-  <include location="Icons.qrc"/>
+  <include location="../trackplayer/ui/resources/Icons.qrc"/>
  </resources>
  <connections/>
 </ui>

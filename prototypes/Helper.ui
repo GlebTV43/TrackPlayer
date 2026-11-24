@@ -286,7 +286,7 @@ color: white</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="Icons.qrc"/>
+  <include location="../trackplayer/ui/resources/Icons.qrc"/>
  </resources>
  <connections/>
 </ui>

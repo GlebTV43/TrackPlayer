@@ -288,7 +288,7 @@ class Ui_MainWindow(object):
         self.label_AllYourTracks.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">All your tracks</span></p></body></html>"))
         self.pushButton_CreatingAlbum.setText(_translate("MainWindow", "Create your own album"))
         self.label_AllYourAlbums.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">All your Albums</span></p></body></html>"))
-import Icons_rc
+from . import Icons_rc
 
 
 if __name__ == "__main__":

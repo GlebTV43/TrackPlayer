@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Icon.jpg" alt="Логотип TrackPlayer" width="104">
+  <img src="trackplayer/ui/resources/Icon.jpg" alt="Логотип TrackPlayer" width="104">
 </p>
 
 <h1 align="center">TrackPlayer</h1>
@@ -40,10 +40,25 @@ py -3.9 -m venv .venv
 
 | Файл | Назначение |
 | --- | --- |
-| [`main.py`](main.py) | Запуск приложения, главное окно и управление воспроизведением. |
-| [`DBWorker.py`](DBWorker.py) | Синхронизация папки с медиатекой, хранение треков и альбомов в SQLite. |
-| [`MainDesign.ui`](MainDesign.ui) и другие `.ui` | Макеты окон Qt Designer. |
-| [`Icons.qrc`](Icons.qrc) и [`Icons_rc.py`](Icons_rc.py) | Описание и скомпилированные ресурсы интерфейса. |
+| [`main.py`](main.py) | Точка входа для запуска из исходников и сборки EXE. |
+| [`trackplayer/app.py`](trackplayer/app.py) | Главное окно, диалоги и управление воспроизведением. |
+| [`trackplayer/library.py`](trackplayer/library.py) | Синхронизация папки с медиатекой, хранение треков и альбомов в SQLite. |
+| [`trackplayer/ui/`](trackplayer/ui/) | Сгенерированные модули PyQt. |
+| [`trackplayer/ui/forms/`](trackplayer/ui/forms/) | Редактируемые макеты окон Qt Designer. |
+| [`trackplayer/ui/resources/`](trackplayer/ui/resources/) | Иконки и описание ресурсов Qt. |
+| [`prototypes/`](prototypes/) | Ранние макеты и эксперименты с интерфейсом. |
+
+<details>
+<summary>Обновление макетов и иконок</summary>
+
+После изменения `MainDesign.ui` или `Icons.qrc` выполните из корня репозитория соответствующую команду:
+
+```powershell
+.\.venv\Scripts\pyuic5.exe --from-imports -x trackplayer/ui/forms/MainDesign.ui -o trackplayer/ui/main_window.py
+.\.venv\Scripts\pyrcc5.exe trackplayer/ui/resources/Icons.qrc -o trackplayer/ui/Icons_rc.py
+```
+
+</details>
 
 <details>
 <summary>Сборка EXE</summary>
