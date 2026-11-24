@@ -3,6 +3,7 @@ import os
 import subprocess
 import time
 import random
+from pathlib import Path
 
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QDialog, QHeaderView, QMainWindow, QApplication
@@ -769,6 +770,10 @@ class MainWidget(QMainWindow, Ui_MainWindow):
 
 def main():
     dir_path = '%s\\TrackPlayer\\' % os.environ['APPDATA']
+    # Qt 5 can misread the plugin directory when its path contains non-ASCII characters.
+    qt_plugins = Path(QtCore.__file__).parent / 'Qt5' / 'plugins'
+    if qt_plugins.is_dir():
+        QtCore.QCoreApplication.addLibraryPath(str(qt_plugins))
     app = QApplication(sys.argv)
     # Проверка наличия необходимых файлов/директорий
     if os.path.exists(dir_path):
